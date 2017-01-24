@@ -1,0 +1,50 @@
+{
+  "name": "slapdash-server",
+  "version": "0.0.1",
+  "description": "A get together app with recommendation utilities",
+  "main": "app.js",
+  "scripts": {
+    "test": "node ./test/test.js",
+    "start": "PORT=4000 DEBUG=app node app.js",
+    "nodemon": "PORT=4000 DEBUG=app node_modules/.bin/nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amhokies/Slapdash-Server.git"
+  },
+  "author": [
+    "Nima Yahyazadeh <nimayz@vt.edu>",
+    "Nelson Lam <lmnelson@vt.edu>",
+    "Alex Marshall <amm28053@vt.edu>",
+    "Harrison Fang <hfang7@vt.edu>",
+    "Matthew",
+    "Pingxin"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amhokies/Slapdash-Server/issues"
+  },
+  "homepage": "https://github.com/amhokies/Slapdash-Server#readme",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "config": "^1.21.0",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-alpha.1",
+    "debug": "^2.2.0",
+    "deepcopy": "^0.6.3",
+    "express": "^4.14.0",
+    "fb": "^1.1.1",
+    "fcm-node": "^1.0.15",
+    "googleplaces-promises": "^1.0.0",
+    "helmet": "^2.1.3",
+    "mongoose": "^4.6.0",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jasmine": "^2.5.1",
+    "mocha": "^3.0.2",
+    "nodemon": "^1.10.2"
+  }
+}

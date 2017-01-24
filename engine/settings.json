@@ -1,0 +1,18 @@
+{
+    "yelpOption": {
+        "food": {
+            "type": "restaurant"
+        },
+        "drink": {
+            "type": "bar"
+        },
+        "play": {
+            "type": "amusement_park|aquarium|bowling_alley|casino|movie_theater|night_club|park|shopping_mall|zoo"
+        }
+    },
+
+    "yelpRadius": {
+        "default": 5000,
+        "extended": 7500
+    }
+}

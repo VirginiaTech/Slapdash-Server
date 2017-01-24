@@ -1,0 +1,14 @@
+{
+	"name": {
+		"firstname": "User1Name",
+		"lastname": "User1Lastname"
+	},
+	"email": "user1@test.com",
+	"fbtokenid": "fbtoken1",
+	"androidregid": "androidregid1",
+	"recentlocation" : {
+		"lat": 1,
+		"lon": 2
+	},
+	"eventsjoined": []
+}

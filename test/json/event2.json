@@ -1,0 +1,12 @@
+{
+    "title": "event2",
+    "description": "event2-description",
+    "category": "Drink",
+    "capacity": 5,
+    "starttime": 213131231231,
+    "createtime": 123123131443,
+    "invitations": [],
+    "attendees": [],
+    "userpermissions": "Closed",
+    "canceled": false
+}

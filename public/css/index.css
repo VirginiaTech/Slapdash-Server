@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+  padding-bottom: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #F5FAFA;
+  max-width: 100%;
+  text-overflow: clip;
+  overflow-x: hidden;
+  background-image: url("../media/MarketSquare.jpg");
+}
+
+.phoneEx{
+  min-width: 700px;
+  min-height:700px;
+  max-width: 30vw;
+  max-height: 70vh;
+}
+
+.playbutton{
+  max-width: 350px;
+}
+
+.titleTxt{
+  border-radius: 10px;
+  width: 50vw;
+  max-width:800px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5vh;
+  margin-top: 1.5vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  font-style: italic;
+  font-family: fantasy;
+}
+
+.descriptionTxt{
+  font-family: serif;
+  border-radius: 10px;
+  min-width: 200px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20vw;
+  line-height: 200%;
+  font-size: 20px;
+  max-width:335px;
+  margin-top: 100px;
+  text-align: left;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.functionBlock>*{
+  float:left;
+}
+
+.waffles>*{
+   margin-right: auto; margin-left: auto; width: 1200px;
+   background-color: rgba(255,255,255,0.5);
+}
+
+.jenga{
+  float: left;
+}
