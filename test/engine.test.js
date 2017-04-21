@@ -32,7 +32,7 @@ describe('geolib.js test', function() {
         var midpoint = geolib.computeMidpoint([ location1 ]);
         expect(compareCoordinates(midpoint, location1, epsilon));
     });
-    
+
     it('test point of minimum distance computation for one location', function() {
         var center = geolib.computeCenter([ location1 ]);
         expect(compareCoordinates(center, location1, epsilon));
@@ -60,7 +60,7 @@ describe('geolib.js test', function() {
 });
 
 describe('decision-making engine test', function() {
-    
+
     var location1, location2;
     before(function() {
         location1 = deepcopy(location1JSON);    // Blacksburg, VA
@@ -70,7 +70,6 @@ describe('decision-making engine test', function() {
     it('test food decision', function(done) {
         this.timeout(2000);
         engine.decide([ location1 ], "food").then(function(data) {
-            console.log("food test: " + data.name);
             done();
         });
     });
@@ -78,7 +77,6 @@ describe('decision-making engine test', function() {
     it('test drink decision', function(done) {
         this.timeout(2000);
         engine.decide([ location1 ], "drink").then(function(data) {
-            console.log("drink test: " + data.name);
             done();
         });
     });
@@ -86,7 +84,6 @@ describe('decision-making engine test', function() {
     it('test fun decision', function(done) {
         this.timeout(2000);
         engine.decide([ location1 ], "play").then(function(data) {
-            console.log("play test: " + data.name);
             done();
         });
     });
@@ -94,7 +91,6 @@ describe('decision-making engine test', function() {
     it('test slapdash decision', function(done) {
         this.timeout(2000);
         engine.decide([ location1 ], "slapdash").then(function(data) {
-            console.log("slapdash test: " + data.name);
             done();
         });
     });
@@ -110,16 +106,9 @@ describe('decision-making engine test', function() {
         this.timeout(5000);
         engine.decide([ location1 ], "food").then(function(data1) {
             engine.reroll([ location1 ], "food", [ data1.id ]).then(function(data2) {
-                console.log("reroll test: " + data1.name + " != " + data2.name);
                 expect(data1.id !== data2.id);
                 done();
             });
         });
-    });
-});
-
-describe('random event name test', function() {
-    it('test random name', function() {
-        console.log(engine.randomName("test user"));
     });
 });
