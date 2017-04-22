@@ -20,10 +20,10 @@ function decide(userLocations, type) {
     // Compute center location.
     var location = GeoModule.computeCenter(userLocations);
 
-	if (type === "slapdash") {
-		var types = settings.yelpOption.keys();
-		type = randomValue(types);
-	}
+		if (type == "slapdash") {
+			var types = Object.keys(settings.yelpOption);
+			type = randomValue(types);
+		}
 
     // Load Yelp search settings.
     var radius = settings.yelpRadius.default;
@@ -45,10 +45,10 @@ function reroll(userLocations, type) {
     // Compute center location.
     var location = GeoModule.computeCenter(userLocations);
 
-	if (type === "slapdash") {
-		var types = settings.yelpOption.keys();
-		type = randomValue(types);
-	}
+		if (type === "slapdash") {
+			var types = Object.keys(settings.yelpOption);
+			type = randomValue(types);
+		}
 
     // Load Yelp search settings.
     var radius = settings.yelpRadius.extended;
